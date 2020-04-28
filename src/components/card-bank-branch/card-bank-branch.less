@@ -1,0 +1,77 @@
+@import '../../styles/var.less';
+
+.card-branch-msg {
+  background: @white;
+  padding: 10px 15px;
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+    .card-branch-left {
+      width: 80px;
+      margin-right: 15px;
+
+      & > img {
+        display: block;
+        width: 100%;
+        height: 80px;
+        border-radius: 5px;
+      }
+    }
+
+    .card-branch-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+      color: gray;
+      padding: 5px 0;
+
+      .bank-desc {
+        margin: 5px 0;
+      }
+
+      .branch_top_text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+
+        & > span {
+          padding-right: 10px;
+        }
+      }
+
+      .word-time {
+        display: flex;
+        justify-content: flex-start;
+
+        & > div {
+          font-size: 11px;
+        }
+
+        & > div:nth-child(1) {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .card-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .connect-bank {
+      position: relative;
+      flex: 1;
+      margin-left: 10px;
+      top: 4px;
+      font-size: 12px;
+    }
+  }
+
+
+}

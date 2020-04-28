@@ -1,0 +1,85 @@
+.examine_card {
+  display: flex;
+  padding: 10px 15px;
+  background-color: #FFFFFF;
+
+  .examine_left {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-right: 15px;
+
+    .manager-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    .title {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 8px;
+    }
+  }
+
+  .examine_right {
+    flex: 1;
+
+    .examine_name {
+      display: flex;
+      margin-bottom: 7px;
+      justify-content: space-between;
+      align-items: center;
+
+      & > span {
+        font-size: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex: 1;
+      }
+
+      .name {
+        border-left: 2px solid #0099FF;
+        padding-left: 6px;
+        margin-right: 6px;
+      }
+
+      .sign {
+        color: #0099FF;
+        text-align: right;
+      }
+    }
+
+    .examine_product {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 72px;
+
+      li {
+        display: flex;
+        align-items: center;
+        height: 24px;
+
+        & > img {
+          width: 8px;
+          height: 8px;
+          margin-right: 10px;
+        }
+
+        span {
+          line-height: 24px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .connect {
+      margin-top: 6px;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@import '../../../styles/var.less';
+
+.content-bank-info {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.admin-app{
+  padding-bottom: 0;
+}
+
+.header {
+  padding: 25px;
+  height: 65px;
+  background-color: #00cccc;
+  color: #fff;
+
+  .share {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .bank-name {
+      font-size: 18px;
+    }
+
+    p {
+      width: 35px;
+      height: 35px;
+      right: 20px;
+      top: 10px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.2);
+      text-align: center;
+
+      button {
+        border: none;
+        padding-left: 6px;
+
+        img {
+          width: 25px;
+          height: 25px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .bank-locale {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+    font-size: 14px;
+
+    .address {
+      flex: 1;
+      word-break: break-all;
+      word-wrap: break-word;
+    }
+
+    .distance {
+      flex: 0 0 100px;
+      margin-left: 10px;
+      text-align: right;
+    }
+  }
+}
+
+.stat-bar {
+  display: flex;
+  margin: 7px 0;
+  background-color: @white;
+
+  .stat-item {
+    display: flex;
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    .num {
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    .name {
+      font-size: 15px;
+    }
+  }
+}
+
+.bottom {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}

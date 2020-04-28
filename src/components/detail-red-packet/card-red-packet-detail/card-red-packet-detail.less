@@ -1,0 +1,53 @@
+.card-red-packet-detail {
+  font-size: 16px;
+  // &:last-child .content{
+  //   border-bottom: none!important;
+  // }
+  width: 100%;
+  height: 88px;
+  background-color: #fff;
+  padding:0 20px;
+  box-sizing: border-box;
+  .content {
+    border-bottom: 1px solid #ddd;
+    .top {
+      height: 50px;
+      line-height: 50px;
+      .name {
+        float: left;
+      }
+      .money {
+        color: red;
+        font-size: 20px;
+        float: right;
+        .green {
+          color: green;
+        }
+        .red {
+          color: red;
+        }
+      }
+    }
+    .bottom {
+      height: 30px;
+      line-height: 30px;
+      padding-left: 15px;
+      margin-bottom: 7px;
+      .office {
+        color: #666;
+        float: left;
+        font-size: 14px;
+      }
+      .date {
+        float: right;
+        font-size: 12px;
+        span {
+          color: #aaa;
+          &:first-child{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

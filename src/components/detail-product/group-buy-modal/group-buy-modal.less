@@ -1,0 +1,83 @@
+.modal-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+
+  .modal-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 5;
+  }
+
+  .modal-body {
+    position: relative;
+    margin: 160px 20px 0;
+    padding: 12px 12px 18px;
+    background-color: #FFF;
+    border-radius: 4px;
+    z-index: 6;
+
+    .body-cell {
+      margin: 10px 0;
+      padding: 5px 0;
+    }
+
+    .send-code{
+      margin-top: 10px;
+    }
+  }
+
+  input {
+    border: .5px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 12px;
+    outline: none;
+  }
+
+  .code-success, .send-code {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .code-success {
+    height: 30px;
+
+    & > p {
+      text-align: left;
+    }
+
+    & > p > span {
+      padding-right: 10px;
+    }
+
+    & > span {
+      color: green;
+    }
+  }
+
+  .group {
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    border: none;
+  }
+
+  .error {
+    font-size: 12px;
+    color: red;
+  }
+}

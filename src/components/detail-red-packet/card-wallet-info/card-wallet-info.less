@@ -1,0 +1,43 @@
+.card-wallet-info {
+  &:last-child {
+    .wallet-info {
+      border-bottom: none !important;
+    }
+  }
+  width: 100%;
+  padding: 0 20px;
+  font-size: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+  .wallet-info {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .balance {
+      font-size: 18px;
+      font-weight: bold;
+
+      i {
+        display: inline-block;
+      }
+
+      .green {
+        color: green;
+      }
+
+      .red {
+        color: red;
+      }
+
+      .blue {
+        color: steelblue;
+      }
+
+    }
+  }
+}

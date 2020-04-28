@@ -1,0 +1,63 @@
+.withdraw {
+  width:100%;
+  height:100%;
+  font-size: 15px;
+  padding-top: 10px;
+  .content {
+    padding: 0 20px;
+    height: 500px;
+    background-color: #fff;
+    box-sizing: border-box;
+    .pay-item {
+      height: 60px;
+      line-height: 60px;
+      border-bottom: 1px solid #ddd;
+      .sign{
+        position: absolute;
+        top: 2px;
+        left: 110px;
+      }
+      span:first-child{
+        display: inline-block;
+        width: 100px;
+      }
+      img {
+        width: 25px;
+        height: 25px;
+        margin-right: 20px;
+        vertical-align: middle;
+      }
+    }
+    .pay-number {
+      position: relative;
+      border-bottom: none;
+    }
+    .wx-balance {
+      padding-right: 10px;
+      text-align: right;
+    }
+    .btn-box {
+      margin-top: 50px;
+      text-align: center;
+      .confirm {
+        padding: 4px 10px;
+        color: #fff;
+        background-color: rgba(204,51,51,1);
+        border-radius: 5px;
+        &:active {
+          background-color: rgba(204,51,51,0.9);
+        }
+      }
+    }
+    .tip {
+      .tip-title {
+        height: 50px;
+        line-height: 50px;
+        font-weight: bold;
+      }
+      .tip-item {
+        font-size: 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import '../../styles/var.less';
+
+.search {
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: @background-color-base;
+  &_icon {
+    margin-right: 8px;
+    font-size: inherit;
+
+    &_in_box {
+      position: absolute;
+      left: 10px;
+      top: 8px;
+    }
+
+    &_clear {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 8px 8px;
+      font-size: 0;
+    }
+  }
+
+  &_bar {
+    background: @background-color-base;
+
+    &_text {
+      display: inline-block;
+      font-size: 12px;
+      vertical-align: middle;
+    }
+
+    &_form {
+      position: relative;
+      -webkit-box-flex: 1;
+      -webkit-flex: auto;
+      flex: auto;
+      border-radius: 5px;
+      border: 1rpx solid @border-color-base;
+    }
+
+    &_box {
+      position: relative;
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 100%;
+      box-sizing: border-box;
+      z-index: 1;
+    }
+
+    &_input {
+      height: 28px;
+      line-height: 28px;
+      font-size: 14px;
+    }
+
+    &_label {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      border-radius: 3px;
+      text-align: center;
+      color: @text-color;
+      line-height: 28px;
+    }
+  }
+}

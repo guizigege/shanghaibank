@@ -1,0 +1,46 @@
+.examine {
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.item-warp {
+  display: flex;
+  padding: 5px;
+  margin: 0 10px;
+  background-color: #FFFFFF;
+
+  .item-icon {
+    display: flex;
+    flex: 0 0 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+    }
+  }
+
+  .item-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 5px 0;
+    width: 0;
+    font-size: 14px;
+
+    .name {
+      margin-bottom: 6px;
+    }
+  }
+
+  .item-ft {
+    font-size: 14px;
+    color: #80848f;
+  }
+}

@@ -1,0 +1,48 @@
+.get-red-page {
+  width: 100%;
+  background: #fff;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+
+  p {
+    margin-left: 10px;
+  }
+
+  .get-red-page-list {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    & > div {
+      width: 100%;
+      padding: 7px 10px;
+      overflow: hidden;
+      border-bottom: .5px solid #f5f5f5;
+      box-sizing: border-box;
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        float: left;
+      }
+    }
+
+    & > div:last-child {
+      border-bottom: none;
+    }
+
+    .log-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > p {
+        width: 8%;
+      }
+    }
+  }
+}

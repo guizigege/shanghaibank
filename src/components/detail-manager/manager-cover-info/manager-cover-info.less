@@ -1,0 +1,106 @@
+.manager-cover-info {
+  background: #fff;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  .manager-photo-img {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    position: relative;
+    background-color: #f5f5f5;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .big-img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+    }
+
+    & > .item {
+      margin-left: 8px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      z-index: 2;
+
+      .tag {
+        white-space: nowrap;
+        max-width: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 4px 8px;
+        margin-left: 5px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 700;
+        color: #fff;
+        background: rgba(255, 0, 0, 0.3);
+      }
+
+      .tag:nth-of-type(1) {
+        margin-left: 0;
+      }
+    }
+
+  }
+
+  & > div:nth-of-type(1) {
+    margin-top: 15px;
+  }
+}
+
+.manager-cover-msg {
+  padding-bottom: 15px;
+
+  .manager-msg {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+
+    & > div:nth-of-type(1) {
+      flex: 0 0 70px;
+      border-left: .5px solid red;
+      font-size: 15px;
+      padding-left: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    & > div:nth-of-type(2) {
+      font-size: 14px;
+      margin-right: 8px;
+      margin-left: 8px;
+      flex: 1;
+      text-align: left;
+    }
+  }
+}
+
+.manager-conect {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 13px;
+  margin-right: 10px;
+
+  p {
+    padding: 5px 8px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid rgba(255, 0, 0, 0.6);
+    border-radius: 3px;
+    color: rgba(255, 0, 0, 0.6);
+    margin-left: 12px;
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../styles/var.less';
+
+.active-card {
+  font-size: @size-font-small;
+  background: @white;
+  border-radius: 8px;
+  margin: 10px 10px 10px 15px;
+  padding: 8px 0 8px 8px;
+  display: flex;
+
+  .left {
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+
+    div {
+      margin-bottom: 6px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      text {
+        margin: 0 4px;
+        font-size: 12px;
+        color: #ff3333;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .right {
+    color: #bbb;
+    font-size: 12px;
+  }
+
+}

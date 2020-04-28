@@ -1,0 +1,86 @@
+.group-buy-info {
+  width: 100%;
+  background: #fff;
+  margin-top: 5px;
+  font-size: 12px;
+
+  .group-num {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > div {
+      margin: 10px;
+
+      span {
+        padding-right: 5px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .group-buy-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+
+    & > div {
+      margin: 10px;
+    }
+
+    .group-buy-img {
+      flex: 0 0 150px;
+
+      .group-buy-name {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .group-right {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+
+      .group-buy-msg > p {
+        margin: 3px 0;
+      }
+    }
+
+    .go-group {
+      padding: 4px 8px;
+      color: #fff;
+      background: red;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .active {
+      background-color: #f5f5f5;
+      color: #ccc;
+    }
+
+    .captain{
+      background-color: #f5f5f5;
+      color: #ccc;
+    }
+  }
+}
+
+.more {
+  font-size: 14px;
+}
+
+.red {
+  color: red;
+}

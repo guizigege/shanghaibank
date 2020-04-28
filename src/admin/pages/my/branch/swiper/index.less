@@ -1,0 +1,72 @@
+@import '../../../../../styles/var.less';
+
+.content {
+
+  .add-plus {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 3px 2px rgba(0, 0, 0, .2);
+    z-index: 4;
+  }
+
+  .list {
+    background-color: @white;
+
+    &_item {
+      display: flex;
+      justify-content: center;
+      font-size: @size-font-small;
+      border-bottom: 1px solid @border-color-base;
+
+      &:last-child {
+        border: none;
+      }
+
+      img {
+        width: 130px;
+        height: 80px;
+        padding-right: 12px;
+      }
+
+      p:not(:first-child):not(:last-child) {
+        padding: 8px 0;
+      }
+
+      .title {
+        font-size: 14px;
+        padding: 0;
+        width: 200px;
+      }
+
+      .desc {
+        color: #ccc;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .status {
+        text-align: right;
+        color: @success-color;
+      }
+    }
+  }
+
+  .swipeout-button-group {
+    height: 100%;
+    width: 100%;
+  }
+
+  .swipeout-button {
+    width: 70px;
+    float: left;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    background: @error-color;
+    color: @white;
+    align-items: center;
+  }
+}

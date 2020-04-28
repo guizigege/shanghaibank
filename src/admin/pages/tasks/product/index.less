@@ -1,0 +1,47 @@
+.picker-wrap {
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+  margin: 5px 10px;
+
+  .picker {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
+
+.scroll-wrap {
+  height: calc(100vh - 74px);
+
+  .item {
+    margin: 10px;
+  }
+
+  .item:first-child {
+    margin-top: 0;
+  }
+}
+
+.page-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+
+  p {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(150, 148, 148);
+    background: #ddd;
+    border-radius: 5px;
+  }
+
+  .active {
+    color: #fff;
+    background: green;
+  }
+}

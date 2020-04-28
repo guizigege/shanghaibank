@@ -1,0 +1,89 @@
+@import '../../styles/var.less';
+
+.active-card {
+  font-size: @size-font-small;
+  background: @white;
+  border-radius: 8px;
+  margin: 10px 15px;
+  padding: 8px;
+
+  .active-top {
+    display: flex;
+    justify-content: space-between;
+
+    .active-card-left {
+      width: 25%;
+
+      &>.img {
+        width: 80px;
+        height: 80px;
+        border-radius: 3px;
+        background-size: 82px 82px;
+
+        &>.red-packet {
+          img {
+            padding: 3px;
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+
+    .active-card-right {
+      width: 70%;
+      padding-top: 8px;
+
+      &>div>p:not(.active_top_text) {
+        margin-top: 6px;
+      }
+
+      .active_top_text {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+      }
+
+      .audit-status {
+        color: @success-color;
+        padding-left: 4px;
+      }
+
+      img {
+        width: 15px;
+        height: 15px;
+        vertical-align: middle;
+      }
+
+      .active-introduce {
+        color: red;
+        vertical-align: middle;
+      }
+
+      .active-card-img {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+
+        span {
+          color: gray;
+          padding-left: 7px;
+        }
+      }
+    }
+  }
+
+  .active-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .active-con {
+      position: relative;
+      flex: 1;
+      margin-left: 10px;
+      top: 2px;
+    }
+  }
+}

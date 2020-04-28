@@ -1,0 +1,49 @@
+@import '../../styles/var.less';
+
+.branch-msg{
+    width: 93%;
+    height: 120px;
+    font-size: @size-font-small;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background: @white;
+    border: 1px solid @white;
+    border-radius: 10px; 
+    margin: 10px auto;
+    &>div{
+        margin: 8px;
+    }
+    .branch-left{
+        &>img{
+            width: 65px;
+            height: 65px;
+        }
+    }
+    .branch-right{
+        width: 70%;
+        &>p{
+            height: 30px;
+            margin-top: 5px;
+        }
+        .branch_top_text{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            &>span{
+                padding-left: 10px;
+                padding-right:  10px;
+            }
+        }
+        img{
+            width: 15px;
+            height: 15px;
+            vertical-align: middle;
+        }
+        .address{
+            color: #ddd;
+            vertical-align: middle;
+        }
+    }
+
+}

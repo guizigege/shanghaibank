@@ -1,0 +1,41 @@
+.superior-page-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+
+  p {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(150, 148, 148);
+    background: #ddd;
+    border-radius: 5px;
+  }
+
+  .active {
+    color: #fff;
+    background: green;
+  }
+}
+
+.scroll-wrap {
+  position: relative;
+  height: calc(100vh - 88px);
+
+  .empty {
+    width: 100%;
+    position: fixed;
+    top: 14%;
+  }
+
+  .item {
+    margin: 10px;
+  }
+
+  .item:first-of-type {
+    margin-top: 0;
+  }
+}

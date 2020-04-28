@@ -1,0 +1,76 @@
+.page {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .search-bar {
+    display: flex;
+    height: 50rpx;
+    padding: 20rpx 30rpx;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+
+  .scroll-view {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 90rpx;
+    bottom: 0;
+    z-index: 9;
+  }
+
+  .qqmap {
+    flex: 1;
+  }
+
+  .tip {
+    font-size: 15px;
+
+    .img {
+      width: 20rpx;
+      height: 20rpx;
+      margin: 4px;
+    }
+
+    .potential-customer {
+      color: #0000FF;
+    }
+
+    .exist-customer {
+      color: #ff66cc;
+    }
+
+    .potential-customer,
+    .exist-customer {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  .btn-red-packet {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    bottom: 40rpx;
+
+    .text {
+      background: red;
+      color: white;
+      font-size: 15px;
+      border-radius: 8rpx;
+      padding: 8rpx;
+    }
+  }
+
+  .selecting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #ccc;
+  }
+}

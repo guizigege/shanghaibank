@@ -1,0 +1,29 @@
+.manager-photo {
+  & > div {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+
+    & > p:nth-of-type(1) {
+      width: 42%;
+    }
+
+    & > p:nth-of-type(2) {
+      width: 57%;
+      margin-left: 8px;
+    }
+
+    & > p {
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 150px;
+      }
+    }
+
+  }
+
+}
